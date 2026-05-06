@@ -1,9 +1,9 @@
 import base64
 from fastapi import FastAPI, File, UploadFile
-from app.analyzer import analyze_excel
-from app.ai_report import generate_ai_report
-from app.report_excel import create_excel_report
-from app.report_pdf import create_pdf_report
+from analyzer import analyze_excel
+from report_excel import create_excel_report
+from report_pdf import create_pdf_report
+from ai_report import generate_ai_report
 
 app = FastAPI(title="Sellout AI API")
 
